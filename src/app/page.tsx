@@ -13,7 +13,9 @@ const App: React.FC = () => {
 
   return (
     <>
+      <div className='hidden md:block'>
       <Navbar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} proyectos={proyectos} />
+      </div>
       <Home isSidebarOpen={isSidebarOpen} />
     </>
   );

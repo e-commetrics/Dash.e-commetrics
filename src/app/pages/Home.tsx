@@ -12,7 +12,7 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({ isSidebarOpen }) => {
   return (
     <div className="flex">
-      <div className={isSidebarOpen ? "ml-56 p-4" : "ml-16 p-4"}>
+      <div className={isSidebarOpen ? "md:ml-56 md:p-4" : "md:ml-16 md:p-4"}>
         <h1 className="py-4 px-8">Lista de Proyectos</h1>
         <div className="grid grid-cols-1 py-4 px-8 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {proyectos.map(
@@ -28,7 +28,7 @@ const Home: React.FC<HomeProps> = ({ isSidebarOpen }) => {
                 </h2>
                 <p>{proyecto.descripcion}</p>
                 <Link className="py-2" href={proyecto.href}>
-                  <Button color="primary">Click me</Button>
+                  <Button className="bg-[#EC4899]">Click me</Button>
                 </Link>
               </Card>
             )
